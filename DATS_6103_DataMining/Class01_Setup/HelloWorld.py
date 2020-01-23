@@ -3,9 +3,6 @@ print("Hello world!")
 print(5 / 8)
 print (7+10)
 
-<<<<<<< HEAD
-
-=======
 #%%
 astring = "Thank you"
 anum = 3.14159265358979323846
@@ -17,4 +14,3 @@ print("I want to say %s, my sweetie digit %d" % (astring,anum) )
 print("I want to say %s, my sweetie long %f" % (astring,anum) )
 # see https://python-reference.readthedocs.io/en/latest/docs/str/formatting.html
 # s-string, d-digit (int), f-float
->>>>>>> 9370f9288975041dec71b455a5c4d520dd025090
