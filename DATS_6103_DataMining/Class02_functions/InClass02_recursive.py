@@ -24,6 +24,15 @@ triangleSum(21)
 
 #%%
 # Try write a recursive function to calculate the "factorial". Example, 4-factorial = 4*3*2*1 returns 24
+def factorial(n):
+  """
+  Calculate the factorial n!
+  """
+  if (n>1):
+    return n*factorial(n-1)
+  return 1
+
+factorial(4)
 
 
 #%% 
@@ -36,11 +45,14 @@ def countNestedNames(a):
   :param a: the nested array of names
   :return: the count
   """
-  cnt = 0
+  cnt = len(a)
+  for item in a:
+    if type(item)==list:
+      cnt = cnt-1
+      #cnt = cnt + countNestedNames(items)
+      cnt += countNestedNames(items)
     
   return cnt
-  
-
 countNestedNames(nestedarray)
 
 #%%
